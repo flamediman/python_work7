@@ -5,6 +5,7 @@ HEIGHT = 400
 BALL_RADIUS = 20
 frame = simplegui.create_frame("Мячик", WIDTH, HEIGHT)
 
+
 class Balls:
 
     def __init__(self, width, height):
@@ -19,7 +20,8 @@ class Balls:
             self.ball_vel[1] *= -1
 
     def draw(self, canvas):
-        canvas.draw_circle(self.ball_pos, BALL_RADI§US, 5, "Blue", "White")
+        canvas.draw_circle(self.ball_pos, BALL_RADIUS, 5, "Blue", "White")
+
 
 def draw(canvas):
     ball.draw(canvas)
